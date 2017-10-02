@@ -1,0 +1,368 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Landscape Screens */
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  .side-mn .social a {
+    margin: 13px auto !important; }
+  #section1 h1 {
+    font-size: 65px;
+    margin: 20px auto !important;
+    letter-spacing: 2px !important;
+    width: 90%; }
+  #section2 .about {
+    width: 90%;
+    margin: 0 5%; }
+  #section2 .about h2 {
+    margin-top: 2% !important; }
+  #section2 .about p {
+    margin: 3% 5% !important;
+    font-size: 14px; }
+  #section2 .about img {
+    width: 70% !important; }
+  #section3 .proj-1 {
+    top: 0;
+    height: 100%;
+    width: 34%;
+    float: left; }
+  #section3 .proj-1:before {
+    top: 0%;
+    height: 100%; }
+  #section3 .proj-1 h3 {
+    padding-top: 50%;
+    font-size: 28px; }
+  #section3 .proj-1 h4 {
+    font-size: 20px; }
+  #section3 .proj-2,
+  #section3 .proj-3,
+  #section3 .proj-4,
+  #section3 .proj-5 {
+    height: 50%;
+    width: 33%; }
+  #section3 .proj-2 h3,
+  #section3 .proj-3 h3,
+  #section3 .proj-4 h3,
+  #section3 .proj-5 h3 {
+    padding-top: 18%;
+    font-size: 20px; }
+  #section3 .proj-2 h4,
+  #section3 .proj-3 h4,
+  #section3 .proj-4 h4,
+  #section3 .proj-5 h4 {
+    font-size: 14px; }
+  #section3 .proj-2:before,
+  #section3 .proj-3:before {
+    top: 0%;
+    height: 50%;
+    width: 33%; }
+  #section3 .proj-4:before,
+  #section3 .proj-5:before {
+    top: 50%;
+    height: 50%;
+    width: 33%; }
+  #section3 .proj-2,
+  #section3 .proj-4 {
+    left: 34%; }
+  #section3 .proj-2:before,
+  #section3 .proj-4:before {
+    left: 34%; }
+  #section3 .proj-3,
+  #section3 .proj-5 {
+    left: 67%; }
+  #section3 .proj-3:before,
+  #section3 .proj-5:before {
+    left: 67%; }
+  #section3 .proj-5 a {
+    font-size: 20px; }
+  #section4 .partners {
+    display: none; }
+  #section4 .contacts h3 {
+    margin-bottom: 20px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) and (orientation: portrait) {
+  /**/
+  #section3 .proj-1 {
+    height: 70%; }
+  #section3 .proj-1:before {
+    height: 70%; }
+  #section3 .proj-1 h3 {
+    font-size: 28px; }
+  #section3 .proj-1 h4 {
+    font-size: 20px; }
+  #section3 .proj-2,
+  #section3 .proj-3,
+  #section3 .proj-4,
+  #section3 .proj-5 {
+    height: 30%; }
+  #section3 .proj-2:before,
+  #section3 .proj-3:before,
+  #section3 .proj-4:before,
+  #section3 .proj-5:before {
+    top: 70%;
+    height: 30%; }
+  #section3 .proj-2 h3,
+  #section3 .proj-3 h3,
+  #section3 .proj-4 h3,
+  #section3 .proj-5 h3 {
+    font-size: 20px; }
+  #section3 .proj-2 h4,
+  #section3 .proj-3 h4,
+  #section3 .proj-4 h4,
+  #section3 .proj-5 h4 {
+    font-size: 14px; }
+  #section3 .proj-5 a {
+    padding-top: 33%;
+    font-size: 20px; } }
+
+@media only screen and (max-width: 870px) and (orientation: portrait) {
+  #section2 .about {
+    width: 90%;
+    margin: 0 5%; }
+  #section2 .about h2 {
+    margin-top: 5%; }
+  #section2 .about p {
+    margin: 6% 5%; }
+  #section2 .about img {
+    width: 100%; } }
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  #section3 .proj-1 {
+    height: 34%; }
+  #section3 .proj-1:before {
+    height: 34%; }
+  #section3 .proj-1 h3 {
+    padding-top: 7%;
+    font-size: 28px; }
+  #section3 .proj-1 h4 {
+    font-size: 20px; }
+  #section3 .proj-2,
+  #section3 .proj-3,
+  #section3 .proj-4,
+  #section3 .proj-5 {
+    height: 33%;
+    width: 50%; }
+  #section3 .proj-2 h3,
+  #section3 .proj-3 h3,
+  #section3 .proj-4 h3,
+  #section3 .proj-5 h3 {
+    padding-top: 18%;
+    font-size: 20px; }
+  #section3 .proj-2 h4,
+  #section3 .proj-3 h4,
+  #section3 .proj-4 h4,
+  #section3 .proj-5 h4 {
+    font-size: 14px; }
+  #section3 .proj-2:before,
+  #section3 .proj-3:before {
+    top: 34%;
+    height: 33%;
+    width: 50%; }
+  #section3 .proj-4:before,
+  #section3 .proj-5:before {
+    top: 67%;
+    height: 33%;
+    width: 50%; }
+  #section3 .proj-2,
+  #section3 .proj-4 {
+    left: 0; }
+  #section3 .proj-2:before,
+  #section3 .proj-4:before {
+    left: 0; }
+  #section3 .proj-3,
+  #section3 .proj-5 {
+    left: 50%; }
+  #section3 .proj-3:before,
+  #section3 .proj-5:before {
+    left: 50%; }
+  #section3 .proj-5 a {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  /*Disable Animation on Mobile Devices*/
+  .main-mn ul {
+    font-size: 50px; }
+  #section1 h1 {
+    font-size: 48px;
+    margin: 30px auto !important;
+    letter-spacing: 2px !important; }
+  #section2 .about {
+    width: 100%;
+    margin: 0; }
+  #section2 .about h2 {
+    margin-top: 6%; }
+  #section2 .about p {
+    margin: 7% 5%; }
+  #section2 .about img {
+    width: 100%; }
+  #section4 .partners {
+    display: block;
+    width: 100%;
+    height: 160px;
+    margin-top: 20px; }
+  #section4 .partners .ambi, #section4 .partners .luft {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 190px; }
+  #section4 .partners .luft {
+    float: right; }
+  #section4 .partners .jira {
+    display: block;
+    position: relative;
+    margin: 15px auto;
+    width: 190px; }
+  #section4 .contacts .h-area {
+    height: 150px; } }
+
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+  .project-details p {
+    margin: 0 30px 30px;
+    font-size: 16px;
+    line-height: 1.5; } }
+
+@media only screen and (max-width: 490px) and (orientation: portrait) {
+  /**/
+  .side-mn {
+    width: 40px; }
+  .side-mn a {
+    width: 30px;
+    height: 31px; }
+  .side-mn .logo {
+    height: 31px; }
+  #fullpage {
+    padding-left: 40px; }
+  #owl-example {
+    width: calc(100% - 39px) !important;
+    margin-left: 40px; }
+  .project-details {
+    width: calc(100% - 39px) !important;
+    margin-left: 40px; }
+  .main-mn ul {
+    padding: 0 0 0 40px;
+    font-size: 30px; }
+  #section1 h1 {
+    font-size: 28px;
+    margin: 40px auto 20px !important;
+    letter-spacing: 0.5px !important; }
+  #section1 h2 {
+    font-size: 24px;
+    margin-top: 0; }
+  #section1 h4 {
+    margin: 20px auto 40px; }
+  #section1 .see-portf {
+    margin: 50px auto 20px !important; }
+  #section2 .about {
+    width: 100%;
+    margin: 0; }
+  #section2 .about h2 {
+    margin: 4% 0; }
+  #section2 .about p {
+    margin: 6% 5%;
+    font-size: 14px; }
+  #section3 .proj-1 h3,
+  #section3 .proj-2 h3,
+  #section3 .proj-3 h3,
+  #section3 .proj-4 h3,
+  #section3 .proj-5 h3 {
+    padding-top: 25%;
+    font-size: 20px; }
+  #section3 .proj-1 h3:after,
+  #section3 .proj-2 h3:after,
+  #section3 .proj-3 h3:after,
+  #section3 .proj-4 h3:after,
+  #section3 .proj-5 h3:after {
+    margin: 4px auto;
+    height: 1px; }
+  #section3 .proj-1 h4,
+  #section3 .proj-2 h4,
+  #section3 .proj-3 h4,
+  #section3 .proj-4 h4,
+  #section3 .proj-5 h4 {
+    font-size: 14px;
+    padding: 0 10px; }
+  #section3 .proj-5 a {
+    font-size: 15px;  }
+  #section4 .partners {
+    height: 90px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #section4 .partners .ambi, #section4 .partners .luft, #section4 .partners .jira {
+    width: 220px;
+    height: 45px;
+    margin: 0 3%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFF; }
+  #section4 .partners .ambi a, #section4 .partners .luft a, #section4 .partners .jira a {
+    display: block;
+    height: 45px; }
+  #section4 .partners .ambi {
+    background-size: 180px; }
+  #section4 .partners {
+    margin: 15px 0;
+    height: 40px; }
+  #section4 .partners .ambi, #section4 .partners .luft, #section4 .partners .jira {
+    float: left;
+    width: 90px;
+    height: 40px;
+    background-size: 80px;
+    margin: 0 2%; }
+  #section4 .partners .jira {
+    background-size: 52px;
+    display: inline-block; }
+  #section4 .contacts {
+    width: 100%;
+    min-width: 260px;
+    float: none; }
+  #section4 .contacts h2,
+  #section4 .contacts h3 {
+    margin: 15px 0; }
+  #section4 .contacts input, #section4 .contacts textarea {
+    line-height: 30px; }
+  #section4 .contacts .hlf-input {
+    width: 90%;
+    margin: 10px auto;
+    float: none; }
+  #section4 .contacts .h-area {
+    width: 94%;
+    margin: 10px 0;
+    height: 130px; }
+  #section4 .contacts .subm {
+    width: 94%;
+    margin: 5px auto;
+    float: none; } }
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  #section3 .proj-1 h3,
+  #section3 .proj-2 h3,
+  #section3 .proj-3 h3,
+  #section3 .proj-4 h3,
+  #section3 .proj-5 h3 {
+    padding-top: 15%; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

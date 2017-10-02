@@ -1,0 +1,613 @@
+@font-face
+	font-family: Montserrat-Reg
+	src: url(../fonts/Montserrat-Regular.otf)
+@font-face
+	font-family: Montserrat-Light
+	src: url(../fonts/Montserrat-Light.otf)
+@font-face
+	font-family: Montserrat-UltraLight
+	src: url(../fonts/Montserrat-UltraLight.otf)
+@font-face
+	font-family: Montserrat-SemiBold
+	src: url(../fonts/Montserrat-SemiBold.otf)    
+@font-face
+	font-family: Montserrat-Bold
+	src: url(../fonts/Montserrat-Bold.otf)    
+html
+	overflow: hidden
+html,
+body
+	height: 100%
+	margin: 0
+	padding: 0
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+.clr
+	clear: both
+.z-toggle
+	z-index: 21
+.full-info
+	transform: translate(0%) !important
+.rel-d
+	position: relative
+.close
+	position: fixed
+	// border-radius: 18px
+	line-height: 36px
+	text-align: center
+	width: 36px
+	height: 36px
+	top: 25px
+	right: 40px
+	font-size: 26px
+	background-color: rgba(0,0,0, 1)
+	color: #BFBFBF
+	z-index: 20
+	&:hover
+		cursor: pointer
+		// background-color: rgba(0,0,0, .8)
+		color: #B7B7B7
+		transform: scale(1.05)
+.project-details
+	position: absolute
+	z-index: 20
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #FFF
+	width: calc(100% - 49px) !important
+	margin-left: 50px
+	overflow-y: scroll
+	overflow-x: hidden
+	transform: translateY(100%)
+	transition: all .5s ease-in-out
+	h2
+		font-size: 28px
+		font-weight: normal
+		font-family: Montserrat-Light, sans-serif
+		text-align: center
+	p
+		margin: 0 80px 30px
+		font-size: 16px
+		line-height: 1.5
+		font-family: Montserrat-Light, sans-serif
+	.img-wr
+		position: relative
+		height: 100vh
+		width: 100%
+		img
+			position: relative
+			height: 100%
+			width: 100%
+			object-fit: cover
+	.down
+		position: absolute
+		line-height: 36px
+		text-align: center
+		width: 40px
+		height: 34px
+		left: 50%
+		bottom: 8%
+		right: 40px
+		transform: translate(-50%, 0)
+		font-size: 20px
+		// color: #BFBFBF
+		// background-color: rgba(0,0,0, .8)
+		background-image: url(../img/icons/arrow.png)
+		background-size: 40px
+		transition: all .2s ease-in-out
+		&:hover
+			bottom: 7%
+			cursor: pointer
+
+.main-mn
+	@extend .before
+	margin-left: 0
+	ul
+		list-style: none
+		text-transform: uppercase
+		font-family: Montserrat-Bold
+		font-size: 65px
+		margin: 0
+		padding: 0 0 0 50px
+		height: 100%
+		li
+			height: 33%
+			background-color: #000
+			display: flex
+			align-items: center
+			justify-content: center
+			a
+				position: relative
+				display: block
+				color: #FFF
+				text-decoration: none
+			&:before
+				@extend .before
+				visibility: hidden
+				opacity: 0
+				transition: visibility 0.8s, opacity 0.5s ease
+				background-size: cover	
+				filter: grayscale(60%)
+				-webkit-filter: grayscale(60%)
+			&:hover
+				&:before
+					visibility: visible
+					opacity: 1
+			&.we
+				&:before
+					background-image: url(../img/books.jpg)
+			&.works
+				&:before
+					background-image: url(../img/hands.jpg)
+			&.keep
+				&:before
+					background-image: url(../img/books.jpg)
+
+		& :last-child
+			height: 34%
+		.we
+			transform: translate(-100%)
+			transition: .4s
+		.works
+			transform: translate(-100%)
+			transition: .7s
+		.keep
+			transform: translate(-100%)
+			transition: .9s
+		.item
+			transform: translate(0)
+				
+.side-mn
+	position: fixed
+	left: 0
+	top: 0
+	height: 100vh
+	width: 50px
+	z-index: 21
+	background-color: #000
+	a
+		position: relative
+		display: block
+		width: 35px
+		height: 37px
+		margin: 35px auto 0
+
+	.logo
+		position: relative
+		height: 37px
+		background-image: url("../img/icons/logo.png")
+		background-size: 100%
+
+	.nav-bt
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 24px
+		height: 18px
+		margin: 0 auto 
+		cursor: pointer
+		#burger
+			position: relative
+			transform: rotate(0deg)
+			transition: .6s ease-in-out
+			span
+				display: block
+				position: absolute
+				height: 2px
+				width: 100%
+				background: #FFF
+				border-radius: 9px
+				opacity: 1
+				left: 0
+				transform: rotate(0deg)
+				transition: .3s ease-in-out
+			span
+				&:nth-child(1)
+					top: 0
+				&:nth-child(2),
+				&:nth-child(3)
+					top: 8px
+				&:nth-child(4)
+					top: 16px
+			&.active-sandwich
+				span
+					&:nth-child(1)
+						top: 18px
+						width: 0%
+						left: 50%
+					&:nth-child(2)
+						transform: rotate(45deg)
+					&:nth-child(3)
+						transform: rotate(-45deg)
+					&:nth-child(4)
+						top: 18px
+						width: 0%
+						left: 50%
+	.social
+		position: absolute
+		width: 100%
+		bottom: 0
+		margin-bottom: 15px
+		a
+			width: 16px
+			height: 16px
+			margin: 20px auto
+			background-repeat: no-repeat
+			&.soc-fb
+				background-position-x: 4px 
+#fullpage
+	padding-left: 50px
+
+#section1
+	position: relative
+	color: #FFF
+	background: url("../img/bg.jpg") no-repeat
+	background-size: cover
+	text-align: center
+	&:before
+		@extend .before
+		background: rgba(0, 0, 0, .3)
+	h1,
+	h2,
+	h4
+		position: relative
+		margin: 0
+	h2
+		font-size: 36px
+		font-family: Montserrat-Regular, sans-serif
+		margin-top: 40px
+		margin-bottom: 10px
+	h1
+		font-size: 72px
+		font-family: Montserrat-SemiBold
+		letter-spacing: 4px
+		width: 75%
+		max-width: 870px
+		margin: 10px auto
+	h4
+		font-size: 22px
+		margin: 40px auto
+		font-family: Montserrat-Light
+		font-weight: normal
+	.see-portf
+		position: relative
+		display: inline-block
+		padding: 14px 30px
+		margin: 30px auto
+		color: #000
+		background-color: #FFF
+		text-decoration: none
+		font-family: Montserrat-Light
+		font-size: 16px
+		&:hover
+			cursor: pointer
+			background-color: rgba(255,255,255,.7)
+#section2
+	.fp-tableCell
+		vertical-align: top
+	.about
+		width: 90%
+		margin: 0 5%
+		text-align: center
+		h2
+			font-family: Montserrat-Light
+			font-size: 22px
+			margin-top: 3%
+			margin-bottom: 2%
+			font-weight: normal
+		p
+			font-family: Montserrat-UltraLight
+			font-size: 16px
+			margin: 2% 3%
+		img
+			width: 69%
+			margin: 0 auto
+			-webkit-filter: grayscale(100%)
+			filter: grayscale(100%)
+#section3
+	color: #FFF
+	h3, a
+		display: none
+		position: relative
+		font-family: Montserrat-Regular, sans-serif
+		font-weight: normal
+		margin: 0
+		
+	h4
+		display: none
+		position: relative
+		font-family: Montserrat-Light, sans-serif
+		font-weight: normal
+		margin: 0 auto
+		padding: 0 15px
+		max-width: 460px
+	.proj-1
+		width: 100%
+		height: 60%
+		text-align: center
+		background-image: url(../img/hands.jpg)
+		background-size: cover
+		transition: all 0.2s ease
+		&:before
+			@extend .before
+			height: 60%
+			background: rgba(0, 0, 0, .2)
+		&:hover
+			cursor: pointer
+			h3, h4
+				display: block
+			&:before
+				transition: all 0.5s ease
+				-webkit-transition: all 0.5s ease
+				background: rgba(0, 0, 0, .7)
+		h3
+			font-size: 32px
+			padding-top: 13%
+			&:after
+				content: ''
+				display: block
+				background: #FFF
+				height: 2px
+				max-width: 115px
+				width: 100%
+				margin: 10px auto
+		h4
+			font-size: 22px
+	.proj-2,
+	.proj-3,
+	.proj-4,
+	.proj-5
+		float: left
+		width: 25%
+		height: 40%
+		text-align: center
+		background-size: cover
+		overflow: hidden
+		&:hover
+			cursor: pointer
+			h3, h4
+				transition: all 0.2s ease
+				display: block
+			&:before
+				transition: all 0.5s ease
+				-webkit-transition: all 0.5s ease
+				background: rgba(0, 0, 0, .7)
+		&:after
+			width: 95px
+		h3
+			padding-top: 25%
+			font-size: 22px
+			&:after
+				content: ''
+				display: block
+				background: #FFF
+				height: 2px
+				max-width: 85px
+				width: 100%
+				margin: 10px auto
+		h4
+			font-size: 16px
+			max-width: 230px
+	.proj-2
+		background-image: url(../img/books.jpg)
+		&:before
+			@extend .before
+			width: 25%
+			height: 40%
+			top: 60%
+			left: 0
+			background: rgba(0, 0, 0, .2)
+	.proj-3
+		background-image: url(../img/bag.jpeg)
+		&:before
+			@extend .before
+			width: 25%
+			height: 40%
+			top: 60%
+			left: 25%
+			background: rgba(0, 0, 0, .2)
+	
+	.proj-4
+		background-image: url(../img/bar.jpg)
+		&:before
+			@extend .before
+			width: 25%
+			height: 40%
+			top: 60%
+			left: 50%
+			background: rgba(0, 0, 0, .2)
+	.proj-5
+		background-image: url(../img/copybook.jpg)
+		&:before
+			@extend .before
+			width: 25%
+			height: 40%
+			top: 60%
+			left: 75%
+			background: rgba(0, 0, 0, .5)
+		a
+			display: block	
+			padding-top: 40%
+			font-size: 22px
+			text-decoration: none
+			color: #FFF
+#section4
+	background-color: #000
+	.fp-tableCell
+		vertical-align: top
+	.partners
+		width: 90%
+		height: 90px
+		margin: 40px auto
+		display: flex
+		align-items: center
+		justify-content: center
+		.ambi, .luft, .jira
+			width: 220px
+			height: 45px
+			margin: 0 3%
+			background-repeat: no-repeat
+			background-position: center
+			color: #FFF
+			a
+				display: block
+				height: 45px
+		.ambi
+			background-size: 180px
+	.contacts
+		width: 45%
+		min-width: 430px
+		margin: 0 auto
+		text-align: center
+		h2,
+		h3
+			font-size: 28px
+			font-weight: normal
+			font-family: Montserrat-Light, sans-serif
+			color: #FFF
+		h3
+			font-size: 16px
+			margin-bottom: 42px
+		input, textarea
+			font-family: Montserrat-Light, sans-serif
+			font-size: 14px
+			border: 1px solid #717171
+			line-height: 40px
+			padding: 3px 2%
+			color: #FFF
+			background-color: #000
+			&:focus
+				outline: none
+		.h-area
+			resize: none
+			box-sizing: border-box
+			height: 200px
+			width: 100%
+			line-height: 20px
+			margin: 20px 0
+			padding-top: 10px
+			padding-bottom: 10px
+		.hlf-input
+			width: 43%
+		.fl-left
+			float: left
+		.fl-right
+			float: right
+
+		.subm
+			background-color: #FFF
+			float: left
+			padding: 0 45px
+			line-height: 34px
+			color: #000
+			border-color: transparent
+			&:hover
+				cursor: pointer
+				background-color: rgba(255,255,255,.7)
+#owl-example
+	overflow: hidden
+	position: relative
+	width: calc(100% - 49px) !important
+	margin-left: 50px
+.owl-controls
+	margin-top: 0 !important
+.wpr
+	position: relative
+	overflow: hidden
+	@extend .before
+	.project
+		position: relative
+		height: 100vh
+		transition: all 0.5s ease
+		-webkit-transition: all 0.5s ease
+		box-sizing: border-box
+		overflow: hidden
+		text-align: center
+		.img-bg
+			display: block
+			width: 100%
+			height: 100%
+			background-size: cover
+			background-position: center
+		h3,
+		h4,
+		span,
+		a
+			display: none
+			margin: 0
+			padding: 0
+			color: #FFF
+			position: relative
+			z-index: 10
+			text-decoration: none
+		h3
+			font-family: Montserrat-Regular, sans-serif
+			font-size: 22px
+			font-weight: normal
+			max-width: 250px
+			margin: 0 auto
+			&:after
+				content: ''
+				display: block
+				background: #FFF
+				height: 2px
+				max-width: 115px
+				width: 100%
+				margin: 10px auto
+
+		h4
+			font-family: Montserrat-Light, sans-serif
+			font-size: 16px
+			text-align: center
+			font-weight: normal
+			min-width: 220px
+			margin: 0 auto
+		span, a
+			font-family: Montserrat-Regular, sans-serif
+			font-size: 16px
+			position: absolute
+			width: 100%
+			// font-weight: bold
+			&.sp-top
+				top: 30px
+			&.sp-bot
+				bottom: 30px
+		.name
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 10
+		&:before
+			@extend .before
+			background: rgba(0, 0, 0, .2)
+			z-index: 5
+			transition: all 0.5s ease
+		&:hover
+			cursor: pointer
+			.img-bg
+				transform: scale(1.05) translateZ(0)
+				-webkit-transform: scale(1.05) translateZ(0)
+				transition: all 0.4s ease
+				-webkit-transition: all 0.4s ease
+			h3,
+			h4,
+			span,
+			a
+				display: block
+			a
+				&:hover
+					text-decoration: underline
+			&:before
+				background: rgba(0, 0, 0, .7)
+				
+//ALWAYS END
+@import "media.sass"
